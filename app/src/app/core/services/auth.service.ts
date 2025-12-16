@@ -42,4 +42,9 @@ login(data: LoginRequest) {
   getToken(): string | null {
     return this.cookieService.get('token');
   }
+
+  isLoggedIn(): boolean {
+  const token = this.getToken();
+  return !!token; 
+}
 }

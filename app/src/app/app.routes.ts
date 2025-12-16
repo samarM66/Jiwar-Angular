@@ -6,3 +6,4 @@ const routes: Routes = [
     {}
 ]
 export const router = provideRouter(routes);
+
